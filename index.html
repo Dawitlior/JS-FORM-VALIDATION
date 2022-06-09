@@ -9,17 +9,18 @@
   </head>
   <body>
     <div id="my_div">
-      <form onsubmit="">
+      <form onsubmit="return mainClickSubmit()">
+        <h1>Registration form</h1>
         <label id="fName_label" for="">First Name:</label><br>
         <input id="name_put" type="text" placeholder="Type your first name" required />
         <br /><br />
 
         <label id="lName_label" for="">Last Name:</label><br>
-        <input id="lName_put" type="text" />
+        <input id="lName_put" type="text" placeholder="Type your last name" />
         <br /><br />
 
         <label id="mail_label" for="">Email:</label><br>
-        <input id="mail_put" type="email" required/> 
+        <input id="mail_put" type="email"placeholder="type your email" required/> 
         <br /><br />
 
         <label id="cell_label" for="">Phone:</label><br>
