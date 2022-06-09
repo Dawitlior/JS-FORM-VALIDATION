@@ -11,7 +11,7 @@
     <div id="my_div">
       <form onsubmit="">
         <label id="fName_label" for="">First Name:</label><br>
-        <input id="name_put" type="text" placeholder="Type your first name" />
+        <input id="name_put" type="text" placeholder="Type your first name" required />
         <br /><br />
 
         <label id="lName_label" for="">Last Name:</label><br>
@@ -19,7 +19,7 @@
         <br /><br />
 
         <label id="mail_label" for="">Email:</label><br>
-        <input id="mail_put" type="email" />
+        <input id="mail_put" type="email" required/> 
         <br /><br />
 
         <label id="cell_label" for="">Phone:</label><br>
@@ -27,11 +27,11 @@
         <br /><br />
 
         <label id="pass1_label" for="">Password:</label><br>
-        <input id="pass1_put" type="password" />
+        <input id="pass1_put" type="password" required minlength="6" maxlength="10"/>
         <br /><br />
 
         <label id="pass2_label" for="">Password again:</label><br>
-        <input id="pass2_put" type="password" /><br><br>
+        <input id="pass2_put" type="password" required/><br><br>
         <button id="id_btn">SUBMIT</button>
       </form>
     </div>
