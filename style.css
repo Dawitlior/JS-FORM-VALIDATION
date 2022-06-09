@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(48, 145, 128);
+}
+
+#my_div{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    align-items: center;
+    text-align: center;
+}
