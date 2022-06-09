@@ -9,13 +9,15 @@ function mainClickSubmit(){
 function checkTheEmail(){
     var mailRegex =
       /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-      if(true){
-
+      if (mailRegex.test (mail_put.value)) {
+        return true
       }
-      return;
+      mail_label.innerHtml = "<span> Try again </span>";
+      mail_label.style.color = "red";
 }
 
 function checkTheFirstName(){
+    var firstName = 
     if(true){
         return true;
     }
@@ -28,7 +30,8 @@ function checkPhone(){
     if(phoneRegex.test(cell_put.value)){
         return true;
     }
-    cell_label.innerHtml = "<span>             </span>";
+    cell_label.innerHtml = "<span> try again</span>";
+    cell_label.style.color = "red";
 }
 
 
