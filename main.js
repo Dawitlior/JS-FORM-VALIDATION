@@ -22,7 +22,7 @@ function checkTheFirstName(){
         return true;
     }
     fName_label.innerHtml = "";
-}
+} 
 
 
 function checkPhone(){
