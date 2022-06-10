@@ -1,6 +1,6 @@
 function mainClickSubmit(){
     if(true){
-        return true
+        return true;
     }
     return false;
 }
@@ -9,19 +9,20 @@ function mainClickSubmit(){
 function checkTheEmail(){
     var mailRegex =
       /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-      if (mailRegex.test (mail_put.value)) {
+      if (mailRegex.test(mail_put.value)) {
         return true
       }
-      mail_label.innerHtml = "<span> Try again </span>";
+      mail_label.innerHtml = "<span>Try again </span>";
       mail_label.style.color = "red";
 }
 
 function checkTheFirstName(){
-    var firstName = 
-    if(true){
-        return true;
+    var firstName = /^[a-zA-Z]{10}$/
+    if (firstName.test(name_put.value)) {
+      return true;
     }
-    fName_label.innerHtml = "";
+    fName_label.innerHtml = "<span> Try again </span>";
+    fName_label.style.color = "red";
 } 
 
 
@@ -33,6 +34,17 @@ function checkPhone(){
     cell_label.innerHtml = "<span> try again</span>";
     cell_label.style.color = "red";
 }
+// --------------------------------NOT FINISH---------------------------------
+function checkTheLastName(){
+    var lastNameRegex;
+    if (lastNameRegex.test(lName_put.value)) {
+      return true;
+    }
+lName_label.innerHtml = "<span> Try again </span>";
+lName_label.style.color = "red";
+}
+
+
 
 
 
