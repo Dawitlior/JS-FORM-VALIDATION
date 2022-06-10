@@ -1,14 +1,18 @@
 function mainClickSubmit(){
-    if(true){
-        return true;
+    if (
+      checkTheEmail() &
+      checkTheFirstName() &
+      checkTheUserDate() &
+      checkThePassword()
+    ) {
+      return true;
     }
     return false;
 }
 
-
 function checkTheEmail(){
     var mailRegex =
-      /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
       if (mailRegex.test(mail_put.value)) {
         return true
       }
@@ -44,7 +48,23 @@ lName_label.innerHtml = "<span> Try again </span>";
 lName_label.style.color = "red";
 }
 
+function checkTheUserDate(){
+    var dateRegex;
+    if(dateRegex.test(date_put.value)){
+        return true;
+    }
+    date_label.innerHtml = "<span> try again </span>";
+    date_label.style.color = "red";
+}
 
+function checkThePassword(){
+    var passRegex;
+    if(passRegex.test(date_put.value)){
+        return true;
+    }
+    date_label.innerHtml = "<span> try again </span>";
+    date_label.style.color = "red";
+}
 
 
 
