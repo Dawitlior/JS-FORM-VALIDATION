@@ -29,7 +29,6 @@ function checkTheFirstName(){
     fName_label.style.color = "red";
 } 
 
-
 function checkPhone(){
     var phoneRegex = /^\d{10}/;
     if(phoneRegex.test(cell_put.value)){
