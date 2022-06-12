@@ -59,7 +59,9 @@ function checkTheUserDate(){
 function checkThePassword(){
     var passRegex;
     if(passRegex.test(date_put.value)){
+      if(pass1.put.value == pass2.put.value){
         return true;
+      }
     }
     date_label.innerHtml = "<span> try again </span>";
     date_label.style.color = "red";
