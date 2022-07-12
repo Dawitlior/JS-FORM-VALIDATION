@@ -20,6 +20,7 @@ function checkTheEmail(){
       mail_label.style.color = "red";
 }
 
+
 function checkTheFirstName(){
     var firstName = /^[a-zA-Z]{10}$/
     if (firstName.test(name_put.value)) {
@@ -28,6 +29,7 @@ function checkTheFirstName(){
     fName_label.innerHtml = "<span> Try again </span>";
     fName_label.style.color = "red";
 } 
+
 
 function checkPhone(){
     var phoneRegex = /^\d{10}/;
